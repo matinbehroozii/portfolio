@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matin Behroozi — Creative Developer & UI/UX Designer</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="alternate icon" href="favicon.ico" />
+    <meta name="description" content="Matin Behroozi — Creative Developer & UI/UX Designer specializing in front-end architecture, design systems, and high-performance interactive web experiences." />
+    <meta name="theme-color" content="#090909" />
+    <meta name="author" content="Matin Behroozi" />
+    <meta property="og:title" content="Matin Behroozi — Creative Developer & UI/UX Designer" />
+    <meta property="og:description" content="Front-end architecture, design systems, and high-performance interactive web experiences." />
+    <meta property="og:type" content="website" />
+
+    <!-- Preload Critical LCP Hero Background Artwork -->
+    <link rel="preload" as="image" href="img/slide-uiux.jpg?v=3" type="image/jpeg" fetchpriority="high" />
+
+    <!-- Google Fonts with Non-blocking Strategy -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Rajdhani:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Rajdhani:wght@400;500;600;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Rajdhani:wght@400;500;600;700&display=swap"
+      />
+    </noscript>
+
+    <link rel="stylesheet" href="style.css?v=3.3" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body>
+    <canvas id="bg3d" aria-hidden="true"></canvas>
+
+    <div class="progress" aria-hidden="true">
+      <div class="progress-bar"></div>
+    </div>
+
+    <header class="navbar-wrapper">
+      <div class="navbar">
+        <a href="#top" class="logo-brand" aria-label="Matin Behroozi Home">
+          <div class="logo-mark" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 19V5L10 12.5L17 5V19" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M17 9H20.5L22 10.5V12L20.5 13.5H17" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M17 13.5H21L22.5 15V17.5L21 19H17" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="logo-title">Matin Behroozi</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav-links" id="nav-links" aria-label="Main Navigation">
+          <div class="nav-drawer-list">
+            <a href="#about" class="nav-link-item">
+              <span class="nav-item-num">01</span>
+              <span class="nav-item-text">About</span>
+            </a>
+            <a href="#skills" class="nav-link-item">
+              <span class="nav-item-num">02</span>
+              <span class="nav-item-text">Skills</span>
+            </a>
+            <a href="#projects" class="nav-link-item">
+              <span class="nav-item-num">03</span>
+              <span class="nav-item-text">Projects</span>
+            </a>
+            <a href="#contact" class="nav-link-item nav-link--mobile-only">
+              <span class="nav-item-num">04</span>
+              <span class="nav-item-text">Contact</span>
+            </a>
+          </div>
+
+          <div class="nav-drawer-footer">
+            <div class="nav-drawer-meta">
+              <span class="nav-meta-label">// TRANSMISSION SIGNAL</span>
+              <a href="mailto:behrooziseyedmatin@gmail.com" class="nav-meta-email">behrooziseyedmatin@gmail.com</a>
+            </div>
+            <div class="nav-drawer-copy">MATIN BEHROOZI // 2026</div>
+          </div>
+        </nav>
+
+        <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+
+        <a href="#contact" class="contact-btn contact-btn--desktop">Contact</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section id="hero">
+        <!-- Hero Background Artwork (slide-uiux) -->
+        <div class="hero-bg" aria-hidden="true"></div>
+
+        <div class="hero-inner">
+          <h1 class="glitch" data-reveal="wipe" data-text="Matin Behroozi">
+            Matin Behroozi
+          </h1>
+
+          <!-- Role tags (clean static badges) -->
+          <div
+            class="hero-tags"
+            data-reveal
+            style="--d: 0.45s"
+            aria-label="Role tags"
+          >
+            <span class="hero-tag">
+              <span class="hero-tag__prefix">//</span> Front-End Developer
+            </span>
+            <span class="hero-tag">
+              <span class="hero-tag__prefix">//</span> UI / UX Designer
+            </span>
+            <span class="hero-tag">
+              <span class="hero-tag__prefix">//</span> Creative Coder
+            </span>
+          </div>
+
+          <p class="hero-text" data-reveal style="--d: 0.65s">
+            I craft and create high-end websites, balancing engineering
+            precision with intuitive interface design.
+          </p>
+
+          <!-- thin decorative line -->
+          <div
+            class="hero-line"
+            data-reveal
+            style="--d: 0.8s"
+            aria-hidden="true"
+          ></div>
+
+          <div class="hero-actions" data-reveal style="--d: 0.9s">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="#contact" class="btn btn--ghost">Contact Me</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" data-reveal>
+        <h2>About</h2>
+
+        <div class="bento-grid">
+          <!-- Card 1: Bio / Philosophy (Wide) -->
+          <article
+            class="bento-card bento-card--bio"
+            data-reveal
+            style="--d: 0.1s"
+          >
+            <h3 class="bento-title">
+              Bridging Code Rigor &amp; Intuitive Product Design
+            </h3>
+            <p class="bento-text">
+              Front-end engineer &amp; UI/UX designer crafting high-performance, resilient digital experiences. Specialized in building scalable design systems, 60fps micro-interactions, and accessible, zero-bloat web architecture.
+            </p>
+            <div class="bento-meta-row">
+              <span class="meta-pill">Pixel Precision</span>
+              <span class="meta-separator">·</span>
+              <span class="meta-pill">Sub-Second TTI</span>
+              <span class="meta-separator">·</span>
+              <span class="meta-pill">Ergonomic UX</span>
+            </div>
+          </article>
+
+          <!-- Card 2: Live Status & Stack -->
+          <article
+            class="bento-card bento-card--status"
+            data-reveal
+            style="--d: 0.2s"
+          >
+            <div class="status-top">
+              <span class="status-indicator">
+                <span class="status-indicator__dot"></span>
+                <span class="status-indicator__text">Available for work</span>
+              </span>
+            </div>
+            <p class="status-caption">Open for remote and on-site contracts</p>
+            <div class="focus-stack">
+              <span class="focus-tag">TypeScript</span>
+              <span class="focus-tag">React / Next.js</span>
+              <span class="focus-tag">Three.js</span>
+              <span class="focus-tag">Figma Tokens</span>
+            </div>
+            <button
+              class="bento-copy-btn"
+              id="copyEmailBtn"
+              aria-label="Copy email address"
+              data-email="behrooziseyedmatin@gmail.com"
+            >
+              <span class="copy-btn__text">behrooziseyedmatin@gmail.com</span>
+              <span class="copy-btn__icon">⎘</span>
+            </button>
+          </article>
+
+          <!-- Card 3: Metrics -->
+          <article
+            class="bento-card bento-card--metrics"
+            data-reveal
+            style="--d: 0.3s"
+          >
+            <div class="metrics-grid">
+              <div class="metric-item">
+                <span class="metric-num">01<span class="metric-accent">+</span></span>
+                <span class="metric-label">Year of Engineering</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-num">60<span class="metric-accent">FPS</span></span>
+                <span class="metric-label">Interaction Standard</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-num">95<span class="metric-accent">+</span></span>
+                <span class="metric-label">Target Lighthouse</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Architecture Pillars -->
+          <article
+            class="bento-card bento-card--principles"
+            data-reveal
+            style="--d: 0.4s"
+          >
+            <div class="principles-list">
+              <div class="principle-item">
+                <span class="principle-idx">01</span>
+                <div class="principle-body">
+                  <h4 class="principle-title">Design System Thinking</h4>
+                  <p class="principle-desc">Tokens and reusable primitives linking Figma to production DOM.</p>
+                </div>
+              </div>
+              <div class="principle-item">
+                <span class="principle-idx">02</span>
+                <div class="principle-body">
+                  <h4 class="principle-title">Performance-First Code</h4>
+                  <p class="principle-desc">Zero runtime bloat, minimal bundle footprint, and instant responsiveness.</p>
+                </div>
+              </div>
+              <div class="principle-item">
+                <span class="principle-idx">03</span>
+                <div class="principle-body">
+                  <h4 class="principle-title">User Ergonomics</h4>
+                  <p class="principle-desc">Accessible WCAG standards with purposeful, responsive feedback.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" data-reveal>
+        <div class="skills-header" data-reveal style="--d: 0.05s">
+          <h2>Skills</h2>
+        </div>
+
+        <div class="capabilities-list" role="region" aria-label="Skills &amp; Capabilities">
+          <!-- Item 01 -->
+          <article class="capability-item active" data-index="0" data-reveal style="--d: 0.12s">
+            <button class="capability-trigger" aria-expanded="true" id="cap-btn-0" aria-controls="cap-panel-0">
+              <span class="capability-idx">01</span>
+              <h3 class="capability-title">Front-End Architecture</h3>
+              <div class="capability-tags-preview">
+                <span class="cap-pill">Next.js 14</span>
+                <span class="cap-pill">TypeScript</span>
+                <span class="cap-pill">React 18</span>
+              </div>
+              <span class="capability-toggle-icon" aria-hidden="true"></span>
+            </button>
+            <div class="capability-drawer" id="cap-panel-0" role="region" aria-labelledby="cap-btn-0">
+              <div class="drawer-content">
+                <p class="drawer-desc">
+                  Type-safe, component-driven web applications built with Next.js 14 App Router, strict TypeScript models, Zustand state management, and streaming SSR.
+                </p>
+                <div class="drawer-tags">
+                  <span class="drawer-tag">Next.js 14</span>
+                  <span class="drawer-tag">React 18</span>
+                  <span class="drawer-tag">TypeScript</span>
+                  <span class="drawer-tag">Zustand</span>
+                  <span class="drawer-tag">TanStack Query</span>
+                  <span class="drawer-tag">Tailwind CSS</span>
+                  <span class="drawer-tag">Turbopack</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 02 -->
+          <article class="capability-item" data-index="1" data-reveal style="--d: 0.2s">
+            <button class="capability-trigger" aria-expanded="false" id="cap-btn-1" aria-controls="cap-panel-1">
+              <span class="capability-idx">02</span>
+              <h3 class="capability-title">Creative Tech &amp; WebGL</h3>
+              <div class="capability-tags-preview">
+                <span class="cap-pill">Three.js</span>
+                <span class="cap-pill">WebGL</span>
+                <span class="cap-pill">GLSL</span>
+              </div>
+              <span class="capability-toggle-icon" aria-hidden="true"></span>
+            </button>
+            <div class="capability-drawer" id="cap-panel-1" role="region" aria-labelledby="cap-btn-1">
+              <div class="drawer-content">
+                <p class="drawer-desc">
+                  Interactive 3D viewports, custom GLSL vertex/fragment shaders, procedural Canvas simulations, and hardware-accelerated 60fps animations.
+                </p>
+                <div class="drawer-tags">
+                  <span class="drawer-tag">Three.js</span>
+                  <span class="drawer-tag">WebGL 2.0</span>
+                  <span class="drawer-tag">GLSL Shaders</span>
+                  <span class="drawer-tag">BufferGeometry</span>
+                  <span class="drawer-tag">HTML5 Canvas</span>
+                  <span class="drawer-tag">60fps Motion</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 03 -->
+          <article class="capability-item" data-index="2" data-reveal style="--d: 0.28s">
+            <button class="capability-trigger" aria-expanded="false" id="cap-btn-2" aria-controls="cap-panel-2">
+              <span class="capability-idx">03</span>
+              <h3 class="capability-title">Design Systems &amp; Figma</h3>
+              <div class="capability-tags-preview">
+                <span class="cap-pill">Tokens</span>
+                <span class="cap-pill">Figma</span>
+                <span class="cap-pill">WCAG AA</span>
+              </div>
+              <span class="capability-toggle-icon" aria-hidden="true"></span>
+            </button>
+            <div class="capability-drawer" id="cap-panel-2" role="region" aria-labelledby="cap-btn-2">
+              <div class="drawer-content">
+                <p class="drawer-desc">
+                  Bridging Figma directly to production code with zero visual drift. Synchronized design tokens, reusable atomic components, and strict WCAG 2.1 AA accessibility.
+                </p>
+                <div class="drawer-tags">
+                  <span class="drawer-tag">Figma Variables</span>
+                  <span class="drawer-tag">Design Tokens</span>
+                  <span class="drawer-tag">Auto Layout</span>
+                  <span class="drawer-tag">WCAG 2.1 AA</span>
+                  <span class="drawer-tag">Fluid Typography</span>
+                  <span class="drawer-tag">Design QA</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 04 -->
+          <article class="capability-item" data-index="3" data-reveal style="--d: 0.36s">
+            <button class="capability-trigger" aria-expanded="false" id="cap-btn-3" aria-controls="cap-panel-3">
+              <span class="capability-idx">04</span>
+              <h3 class="capability-title">Performance &amp; Tooling</h3>
+              <div class="capability-tags-preview">
+                <span class="cap-pill">95+ Lighthouse</span>
+                <span class="cap-pill">CI/CD</span>
+                <span class="cap-pill">Git</span>
+              </div>
+              <span class="capability-toggle-icon" aria-hidden="true"></span>
+            </button>
+            <div class="capability-drawer" id="cap-panel-3" role="region" aria-labelledby="cap-btn-3">
+              <div class="drawer-content">
+                <p class="drawer-desc">
+                  Sub-second page loads and zero layout shifts. Relentlessly auditing bundle footprints, optimizing Core Web Vitals, and automating CI/CD pipelines.
+                </p>
+                <div class="drawer-tags">
+                  <span class="drawer-tag">Core Web Vitals</span>
+                  <span class="drawer-tag">Lighthouse CI</span>
+                  <span class="drawer-tag">GitHub Actions</span>
+                  <span class="drawer-tag">Code Splitting</span>
+                  <span class="drawer-tag">Vite / Turbopack</span>
+                  <span class="drawer-tag">pnpm</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" data-reveal>
+        <div class="projects-header">
+          <h2>Projects</h2>
+        </div>
+
+        <div class="projects-list">
+          <!-- Project 01: Portfolio Website -->
+          <article class="project-item project-item--portfolio" data-reveal style="--d: 0.1s">
+            <div class="project-item__bg" aria-hidden="true"></div>
+
+            <div class="project-item__body">
+              <div class="project-item__top">
+                <div class="project-item__header">
+                  <span class="project-idx">01</span>
+                  <h3 class="project-title">Portfolio Website</h3>
+                </div>
+                <div class="project-links">
+                  <a href="https://thehonoredone.ir" target="_blank" rel="noopener noreferrer" class="p-link p-link--primary" aria-label="Visit Portfolio Website">
+                    <span>Live Website</span>
+                    <span class="p-link-arrow">↗</span>
+                  </a>
+                </div>
+              </div>
+
+              <p class="project-desc">
+                High-performance personal engineering portfolio engineered with native Three.js WebGL shaders, fluid clamp() typography, and zero runtime frameworks for instant 60fps rendering.
+              </p>
+
+              <div class="project-tags">
+                <span class="p-tag">Three.js</span>
+                <span class="p-tag">WebGL / GLSL</span>
+                <span class="p-tag">Vanilla JS</span>
+                <span class="p-tag">Performance</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 02: Cafe and Restaurant -->
+          <article class="project-item project-item--cafe" data-reveal style="--d: 0.2s">
+            <div class="project-item__bg" aria-hidden="true"></div>
+
+            <div class="project-item__body">
+              <div class="project-item__top">
+                <div class="project-item__header">
+                  <span class="project-idx">02</span>
+                  <h3 class="project-title">Cafe and Restaurant</h3>
+                </div>
+                <div class="project-links">
+                  <a href="https://majara.io/" target="_blank" rel="noopener noreferrer" class="p-link p-link--primary" aria-label="Visit Cafe and Restaurant">
+                    <span>Live Website</span>
+                    <span class="p-link-arrow">↗</span>
+                  </a>
+                </div>
+              </div>
+
+              <p class="project-desc">
+                Fast interactive dining and menu web platform designed for hospitality speed with instant category navigation, responsive ordering flow, and offline-ready caching.
+              </p>
+
+              <div class="project-tags">
+                <span class="p-tag">Next.js 14</span>
+                <span class="p-tag">TypeScript</span>
+                <span class="p-tag">Tailwind CSS</span>
+                <span class="p-tag">PWA</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 03: Institute Website -->
+          <article class="project-item project-item--institute" data-reveal style="--d: 0.3s">
+            <div class="project-item__bg" aria-hidden="true"></div>
+
+            <div class="project-item__body">
+              <div class="project-item__top">
+                <div class="project-item__header">
+                  <span class="project-idx">03</span>
+                  <h3 class="project-title">Institute Website</h3>
+                </div>
+                <div class="project-links">
+                  <a href="https://pentalkgroup.com/" target="_blank" rel="noopener noreferrer" class="p-link p-link--primary" aria-label="Visit Institute Website">
+                    <span>Live Website</span>
+                    <span class="p-link-arrow">↗</span>
+                  </a>
+                </div>
+              </div>
+
+              <p class="project-desc">
+                Modern educational academy and language institute website featuring responsive course catalogs, interactive learning modules, and accessible design systems.
+              </p>
+
+              <div class="project-tags">
+                <span class="p-tag">React 18</span>
+                <span class="p-tag">TypeScript</span>
+                <span class="p-tag">Design System</span>
+                <span class="p-tag">Web Audio API</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" data-reveal>
+        <div class="contact-header">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="contact-container">
+          <!-- Hero Headline & Context -->
+          <div class="contact-hero" data-reveal style="--d: 0.1s">
+            <h3 class="contact-title">Wonder What's Next</h3>
+            <p class="contact-desc">
+              Whether you have a cutting-edge front-end engineering role, a design system project, or an ambitious creative coding concept, my transmission channel is always open.
+            </p>
+          </div>
+
+          <!-- Interactive Direct Email Plate -->
+          <div class="contact-email-card" data-reveal style="--d: 0.18s">
+            <div class="email-plate-left">
+              <span class="email-prefix">// PRIMARY TRANSMISSION CHANNEL</span>
+              <div class="email-address-row">
+                <span class="email-address">behrooziseyedmatin@gmail.com</span>
+                <span class="response-badge">&lt; 24h response</span>
+              </div>
+            </div>
+            <div class="email-plate-actions">
+              <button type="button" class="contact-action-btn contact-action-btn--copy" id="contactCopyBtn" data-email="behrooziseyedmatin@gmail.com" aria-label="Copy email address">
+                <span class="contact-copy-label">CLICK TO COPY EMAIL</span>
+                <span class="action-icon">📋</span>
+              </button>
+              <a href="mailto:behrooziseyedmatin@gmail.com" class="contact-action-btn contact-action-btn--send" aria-label="Open email client">
+                <span>OPEN MAIL CLIENT</span>
+                <span class="action-icon">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Social Media & Profile Icons Row -->
+          <div class="contact-social-row" data-reveal style="--d: 0.26s">
+            <a href="https://github.com/matinbehroozii" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub" title="GitHub">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn" title="LinkedIn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+
+            <a href="https://t.me/matbehroozi" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Telegram" title="Telegram">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </a>
+
+            <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Curriculum Vitae" title="Curriculum Vitae (Resume)">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Cyberpunk Minimal Footer -->
+          <footer class="site-footer" data-reveal style="--d: 0.4s">
+            <div class="footer-left">
+              <span>© 2026 MATIN BEHROOZI</span>
+              <span class="footer-sep">/</span>
+              <span class="footer-note">ARCHITECTED FOR PERFORMANCE &amp; SPEED</span>
+            </div>
+            <a href="#hero" class="back-to-top">
+              <span>RETURN TO TOP</span>
+              <span class="top-arrow">↑</span>
+            </a>
+          </footer>
+        </div>
+      </section>
+    </main>
+
+    <script defer src="three.lib.js"></script>
+    <script defer src="bg3d.js"></script>
+    <script defer src="script.js"></script>
+  </body>
+</html>
